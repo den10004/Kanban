@@ -91,8 +91,12 @@ function Login() {
         </LoadingButton>
       </Box>
       <Button component={Link} to="/signup" sx={{ textTransform: "none" }}>
-        Нет аккаунта ? Зарегистрироваться
+        Нет аккаунта? Зарегистрироваться
       </Button>
+
+      <p>тестовый аккаунт</p>
+      <p>логин: administrator</p>
+      <p>пароль: 12345678</p>
     </>
   );
 }
