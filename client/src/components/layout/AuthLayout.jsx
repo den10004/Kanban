@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import authUtils from "../../utils/authUtils";
 import Loading from "../common/Loading";
-import assets from "../../assets";
 
 const AuthLayout = () => {
   const navigate = useNavigate();
@@ -33,11 +32,7 @@ const AuthLayout = () => {
           flexDirection: "column",
         }}
       >
-        <img
-          src={assets.images.logoDark}
-          style={{ width: "100px" }}
-          alt="app logo"
-        />
+        <h2>Доска задач</h2>
         <Outlet />
       </Box>
     </Container>
