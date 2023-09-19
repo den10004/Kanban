@@ -12,7 +12,6 @@ import Home from "./pages/Home";
 import Board from "./pages/Board";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
-import "./App.css";
 
 function App() {
   const theme = createTheme({
