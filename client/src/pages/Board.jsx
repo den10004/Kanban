@@ -132,6 +132,7 @@ function Board() {
       if (isFavourite) {
         const newFavouriteList = favouriteList.filter((e) => e.id !== boardId);
         dispatch(setFavouriteList(newFavouriteList));
+        navigate("/");
       }
 
       const newList = boards.filter((e) => e.id !== boardId);
@@ -141,6 +142,7 @@ function Board() {
         navigate(`/boards/${newList[0].id}`);
       }
       dispatch(setBoards(newList));
+      navigate("/");
     } catch (err) {
       alert(err);
     }
